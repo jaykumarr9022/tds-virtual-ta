@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 
-app = FastAPI()  # <-- This line is required!
+app = FastAPI()
 
 @app.get("/")
-def read_root():
-    return {"message": "TDS Virtual TA API is running!"}
+async def root():
+    return {"message": "Hello World"}
